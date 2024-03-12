@@ -3,12 +3,11 @@
 #ifndef VINT_QUEUE_H_INCLUDED
 #define VINT_QUEUE_H_INCLUDED
 
-typedef struct
-{
-   int *elements;
-   int capacity;
-   int front;
-   int back;
+typedef struct {
+    int *elements;
+    int capacity;
+    int front;
+    int back;
 } IntQueue;
 
 void vint_queue_init( IntQueue *iqueue, int cap );
