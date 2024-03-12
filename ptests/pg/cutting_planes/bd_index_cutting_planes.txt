@@ -1,0 +1,16 @@
+15
+0014 ; 0.167 ; 0.149 ; RCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0013 ; 0.149 ; 0.250 ; MRCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0012 ; 0.426 ; 0.300 ; MMRCMPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0011 ; 0.194 ; 0.151 ; RCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0010 ; 0.153 ; 0.251 ; MRCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0009 ; 0.432 ; 0.303 ; MMRCMPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0008 ; 0.168 ; 0.149 ; RCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0007 ; 0.160 ; 0.260 ; MRCPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0006 ; 0.434 ; 0.292 ; MMRCMPSP ; 2017, Oct 03 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0005 ; 0.188 ; 0.156 ; RCPSP ; 2017, Oct 02 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0004 ; 0.189 ; 0.286 ; MRCPSP ; 2017, Oct 02 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0003 ; 0.432 ; 0.303 ; MMRCMPSP ; 2017, Oct 02 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0002 ; 0.214 ; 0.307 ; MRCPSP ; 2017, Oct 01 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0001 ; 0.272 ; 0.167 ; RCPSP ; 2017, Oct 01 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;
+0000 ; 0.481 ; 0.268 ; MMRCMPSP ; 2017, Sept 24 <br/>--h-- ; 1 parameter<br/>(exec./param.): 1 ;

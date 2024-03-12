@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>Offset Job (OJ)</title>
+
+    <link type="text/css" rel="stylesheet" href="../_css/tables.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/formCss.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/nova.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/printForm.css" media="print"/>
+    
+    <style type="text/css">
+      .form-label{
+	  width:150px !important;
+      }
+      .form-label-left{
+	  width:150px !important;
+      }
+      .form-line{
+	  padding-top:12px;
+	  padding-bottom:12px;
+      }
+      .form-label-right{
+	  width:150px !important;
+      }
+      body, html{
+	  margin:0;
+	  padding:0;
+	  background:#FFFFFF;
+      }
+
+      .form-all{
+	  margin:0px auto;
+	  padding-top:0px;
+	  width:800px;
+	  background:#FFFFFF;
+	  color:#555 !important;
+	  font-family:'Lucida Grande';
+	  font-size:14px;
+      }
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+	  color:#555;
+      }
+      
+      img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <font face="Arial" >
+
+  <div class="form-all">
+    <ul class="form-section">
+      <li id="cid_1" class="form-input-wide">
+        <div class="form-header-group">
+          <h2 id="header_1" class="form-header">
+            Offset Job (OJ)
+          </h2>
+          <div id="subHeader_1" class="form-subHeader">
+	    Neighborhood
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../about_neigh.html">Back</a> - <a href="../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1" >
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+           <font face="Arial" >
+           
+          <p align="justify" style="font-size: 17px" >
+          This neighborhood is somewhat similar to neighborhood <i>Offset Project (OP)</i>, but its purpose is to perform a displacement of size <i>k</i> in just one job <i>j</i>.
+
+          <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To perform this process, it is necessary to receive as a parameter the allocations sequence <i>S</i>, the index <i>i</i> of job <i>j</i> to be displaced, the size <i>k</i> of offset and the direction <i>dir</i>, where 1 represents the offset to the right and any other number represents the offset to the left.
+
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before performing the offset is important to establish the limits, identifying the index <i>pid</i> of the last or first job of <i>p</i> allocated in <i>S</i> and check in accordance with the direction <i>dir</i> if it is possible apply the offset <i>k</i>. The offset to the left is invalid when <i>pid</i> − <i>k</i> &lt; 0, the offset to the right becomes invalid when <i>pid</i> + <i>k</i> &ge; |<i>S</i>|. In both cases of invalid movement, the size of <i>k</i> is decremented until it finds a possible size <i>k</i> or <i>k</i> = 0. Only after checking the validity of offset, all jobs of <i>p</i> are displaced.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before performing the offset is important to establish the limits, so it is ascertained index <i>i</i> in relation to <i>dir</i>, if it is possible apply the offset <i>k</i>. The offset to the left is invalid when <i>i</i> − <i>k</i> &lt; 0, the offset to the right becomes invalid when <i>i</i> + <i>k</i> &ge; |<i>S</i>|. In both cases of invalid movement, the size of <i>k</i> is decremented until it finds a possible size for <i>k</i> or <i>k</i> = 0.
+	  <br/>
+	  
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Only after checking the validity of offset, the job <i>j</i> is displaced. This validation does not guarantee that the offset is valid to precedence constraints, so it is necessary to perform a topological sort in <i>S</i>, to sort jobs which are on wrong position.
+	  <br/>
+	  
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 6 shows the movement made by this neighborhood. In this example, the method receives as parameter a position 3 and the offset size 3, thus this job will be displaced.
+	  <br/>	  
+	  
+	  <br/><br/><br/>
+	  
+	  <img style="image-align: center;" id="icone" src="images/oj_f06.png"/>
+	  
+	  </font>
+          </div>
+        </div>
+      </li>
+      
+  
+    </ul>
+  </div>
+  </font>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>Offset Project (OP)</title>
+
+    <link type="text/css" rel="stylesheet" href="../_css/tables.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/formCss.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/nova.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/printForm.css" media="print"/>
+    
+    <style type="text/css">
+      .form-label{
+	  width:150px !important;
+      }
+      .form-label-left{
+	  width:150px !important;
+      }
+      .form-line{
+	  padding-top:12px;
+	  padding-bottom:12px;
+      }
+      .form-label-right{
+	  width:150px !important;
+      }
+      body, html{
+	  margin:0;
+	  padding:0;
+	  background:#FFFFFF;
+      }
+
+      .form-all{
+	  margin:0px auto;
+	  padding-top:0px;
+	  width:800px;
+	  background:#FFFFFF;
+	  color:#555 !important;
+	  font-family:'Lucida Grande';
+	  font-size:14px;
+      }
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+	  color:#555;
+      }
+      
+      img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <font face="Arial" >
+
+  <div class="form-all">
+    <ul class="form-section">
+      <li id="cid_1" class="form-input-wide">
+        <div class="form-header-group">
+          <h2 id="header_1" class="form-header">
+            Offset Project (OP)
+          </h2>
+          <div id="subHeader_1" class="form-subHeader">
+	    Neighborhood
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../about_neigh.html">Back</a> - <a href="../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1" >
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+           <font face="Arial" >
+           
+          <p align="justify" style="font-size: 17px" >
+          The neighborhood purpose is to conduct a displacement of size <i>k</i> in all jobs ofproject <i>p</i>.
+          <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To perform this process, it is necessary to receive as a parameter the allocations sequence <i>S</i>, the project <i>p</i> to be displaced, the size <i>k</i> of offset and thedirection dir, where −1 represents the offset to the left and any other numberrepresents the offset to the right.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before performing the offset is important to establish the limits, identifying the index <i>pid</i> of the last or first job of <i>p</i> allocated in <i>S</i> and check in accordance with the direction dir if it is possible apply the offset <i>k</i>. The offset to the left is invalid when <i>pid</i> − <i>k</i> &lt; 0, the offset to the right becomes invalid when <i>pid</i> + <i>k</i> ≥ |<i>S</i>|. In both cases of invalid movement, the size of <i>k</i> is decremented until it finds a possible size <i>k</i> or <i>k</i> = 0. Only after checking the validity of offset, all jobs of <i>p</i> are displaced.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 3 shows the movement made by this neighborhood. In this example, the method receives as parameter the project 4, the direction 1 representing the offset to the right and the offset size equal to 1. All jobs pertaining to project <i>p<sub>4</sub></i> are colored in gray.
+	  <br/>
+	  
+	  <br/><br/><br/>
+	  
+	  <img style="image-align: center;" id="icone" src="images/sctp_f02.png"/>
+	  
+	  </font>
+          </div>
+        </div>
+      </li>
+      
+  
+    </ul>
+  </div>
+  </font>
+  </body>
+</html>

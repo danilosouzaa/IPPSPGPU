@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>Compact Project on Percentage (CPP)</title>
+
+    <link type="text/css" rel="stylesheet" href="../_css/tables.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/formCss.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/nova.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/printForm.css" media="print"/>
+    
+    <style type="text/css">
+      .form-label{
+	  width:150px !important;
+      }
+      .form-label-left{
+	  width:150px !important;
+      }
+      .form-line{
+	  padding-top:12px;
+	  padding-bottom:12px;
+      }
+      .form-label-right{
+	  width:150px !important;
+      }
+      body, html{
+	  margin:0;
+	  padding:0;
+	  background:#FFFFFF;
+      }
+
+      .form-all{
+	  margin:0px auto;
+	  padding-top:0px;
+	  width:800px;
+	  background:#FFFFFF;
+	  color:#555 !important;
+	  font-family:'Lucida Grande';
+	  font-size:14px;
+      }
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+	  color:#555;
+      }
+      
+      img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <font face="Arial" >
+
+  <div class="form-all">
+    <ul class="form-section">
+      <li id="cid_1" class="form-input-wide">
+        <div class="form-header-group">
+          <h2 id="header_1" class="form-header">
+            Compact Project on Percentage (CPP)
+          </h2>
+          <div id="subHeader_1" class="form-subHeader">
+	    Neighborhood
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../about_neigh.html">Back</a> - <a href="../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1" >
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+           <font face="Arial" >
+           
+          <p align="justify" style="font-size: 17px" >
+          This neighborhood is similar to <i>Compact Project on Extreme (CPE)</i>, its purpose is to compact a project <i>p</i> given a compaction percentage <i>perc</i>, where the compaction order occurs in reverse of sequence <i>S</i>.
+          <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To perform this process, it is necessary to receive as a parameter the allocations sequence <i>S</i>, the compaction percentage <i>perc</i> and the project <i>p</i> to be compacted.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first step, it is calculated the number of jobs in <i>p</i> that will be compacted relative to <i>perc</i>, just after are identified the indexes of the last <i>idxEnd</i> and first <i>idxStart</i> jobs of <i>p</i> allocated, taking into account the number of jobs that will be compacted starting at the end of <i>S</i>. Jobs belonging to <i>p</i> allocated at this interval are stored in the vector <i>M1</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After setting indexes, all jobs with smaller indexes than <i>idxStart</i> are added to vector <i>L</i> and all jobs with bigger indexes than <i>idxEnd</i> are added to vector <i>R</i>. The other jobs within the range <i>idxStart</i> and <i>idxEnd</i> not belonging to project <i>p</i> are added to vector <i>M2</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing this first step, it is necessary unite all jobs contained in <i>M1</i>, <i>M2</i>, <i>L</i> and <i>R</i>. Initially, the sequence is rebuilt including all jobs of <i>L</i>, representing jobs allocated before <i>idxStart</i>. Soon after, are added all jobs of <i>M1</i>, containing jobs compacted of <i>p</i> and then are added jobs of <i>M2</i>, containing jobs that prevented the compression of project jobs <i>p</i>. Finally, jobs of <i>R</i> are added, containing all jobs allocated after <i>idxEnd</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 4 shows the movement made by this neighborhood. In this example, the method receives as parameter the project 4 and the compaction percentage 0.5. As the project has five jobs, the percentage of 50% indicates a compaction of 2.5 jobs beginning of the end. The jobs to be compacted are respectively 9 and 10. All jobs pertaining to project <i>p<sub>4</sub></i> are colored in gray.
+	  <br/>
+	  
+	  <br/><br/><br/>
+	  
+	  <img style="image-align: center;" id="icone" src="images/cpp_f04.png"/>
+	  
+	  </font>
+          </div>
+        </div>
+      </li>
+      
+  
+    </ul>
+  </div>
+  </font>
+  </body>
+</html>

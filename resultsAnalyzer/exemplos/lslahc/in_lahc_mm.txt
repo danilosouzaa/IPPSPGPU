@@ -1,0 +1,43 @@
+[arquivo_resultados] = results_lahc_mm.txt ;
+
+[nome_do_algoritmo] = lslahc ;
+
+[nome_do_problema] = mrcpsp ;
+
+[nome_dos_campos] = instance , init_sol , TPD , TMS , cost , time , nome_sol , lfa , -nDiversification , -nwoimprove , -nCostList , -perc ;
+
+[descricao] = Local search. Initial solutions generated with the COIN Branch and Cut solver (CBC). Problem: MRCPSP ;
+
+[caminho_pasta_solucoes] = solutions_mm_j30/ ;
+
+[campo_nome_sol] = 6 ;
+
+[campo_run_time] = 5 ;
+
+[campos_parametros_de_entrada] = 0 , 7 , 8 , 9 , 10 , 11 ; 
+
+[campos_ignorar] = -1 ;
+
+[campo_dual_bound_final] = -1 ;
+
+[campo_sol_final_FO] = 3 ;
+
+[campo_sol_inicial_FO] = 1 ;
+
+[campo_calc_quality] = 3 ;
+
+[campo_substituir_orig_dest] = -1 , -1 ;
+
+#_PAGINA_INDEX
+
+[pag_summary_start_date] = 07/05/2017 ;
+
+[pag_summary_end_date] = 07/05/2017 ;
+
+#_PAGINA_RESULTS
+
+[pag_results_campos_calc_media_e_desvio] = -1 ;
+
+[pag_results_exibir_campos] = 0 , 7 ;
+
+[end]

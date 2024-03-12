@@ -1,0 +1,274 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+    
+    <title>Test 005: lslahc</title>
+
+    <link type="text/css" rel="stylesheet" href="../../_css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="../../_css/tables.css"/>
+    <link type="text/css" rel="stylesheet" href="../../_css/formCss.css"/>
+    <link type="text/css" rel="stylesheet" href="../../_css/nova.css"/>
+    <link type="text/css" rel="stylesheet" href="../../_css/printForm.css" media="print"/>
+
+    <style type="text/css">
+
+      .form-label{
+	  width:150px !important;
+      }
+      .form-label-left{
+	  width:150px !important;
+      }
+      .form-line{
+	  padding-top:12px;
+	  padding-bottom:12px;
+      }
+      .form-label-right{
+	  width:150px !important;
+      }
+      body, html{
+	  margin:0;
+	  padding:0;
+	  background:#FFFFFF;
+      }
+
+      .form-all{
+	  margin:0px auto;
+	  padding-top:0px;
+	  width:690px;
+	  background:#FFFFFF;
+	  color:#555 !important;
+	  font-family:'Lucida Grande'; 
+	  font-size:14px;
+      }
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+	  color:#555;
+      }
+ 
+    </style>
+    
+  </head>
+  
+  <body>
+
+    <font face="Arial" >
+
+      <li class="form-input-wide" id="id_0" >
+        <div class="form-header-group">
+          <h2 id="header_1" class="form-header">
+            Test 005: lslahc (Details)
+          </h2>
+          <div id="subHeader_1" class="form-subHeader">
+            Test based on lslahc algorithm using the learning method
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../index_lslahc.html">Back</a> - <a href="../../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+              <em>
+                Update: 10/10/2015
+              </em>
+          </div>
+        </div>
+      </li>   
+      
+      <br/>
+      
+      <li class="form-line" id="id_5">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+
+		<table id="anyTableLeft">
+	
+	            <tr>
+		      <th bgcolor="#cecece" align="center" width="580px"><div class='header'>all parameters</div></th>
+		      <th bgcolor="#cecece" align="center" width="550px"><div class='header'>script (python)</div></th>
+		    </tr>
+		    <tr bgcolor="#FFFFFF">
+			<td align="left" style="width:580px word-wrap: break-word">
+			    <br/><b>intensity:</b> 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00, 1.00
+			    <br/><br/>
+			    
+			    <b>learning: </b> 1
+			    
+			    <br/>
+			    
+			    
+			    <br/><b>lfa: </b>1000
+			    
+			    <br/><b>seed: </b>100000
+
+			    <br/><br/>
+			</td>
+		    
+			<td align="left" >
+	  
+<div class="com_wrap" title="" style="width:550px word-wrap: break-word">
+<br/>
+<font color=green>#!/usr/bin/python</font><br/>
+<font color=#924c9d>import</font> os, sys, re<br/>
+<br/>
+setInstance = [<font color=#bf0303>'A-'</font>, <font color=#bf0303>'B-'</font>, <font color=#bf0303>'X-'</font>]<br/>
+setNI = [<font color=#b08000>10</font>,<font color=#b08000>9</font>,<font color=#b08000>8</font>,<font color=#b08000>7</font>,<font color=#b08000>6</font>,<font color=#b08000>5</font>,<font color=#b08000>4</font>,<font color=#b08000>3</font>,<font color=#b08000>2</font>,<font color=#b08000>1</font>]<br/>
+vetSol = [<font color=#b08000> 1</font>,<font color=#b08000> 2</font>,<font color=#b08000> 3</font>,<font color=#b08000> 4</font>,<font color=#b08000> 5</font>,<font color=#b08000> 6</font>,<font color=#b08000> 7</font>,<font color=#b08000> 8</font>,<font color=#b08000> 9</font>,<font color=#b08000> 10</font>]<br/>
+
+<br/>
+<b>for</b> inst <b>in</b> setInstance:<br/>
+&nbsp;&nbsp;&nbsp;<b>for</b> h <b>in</b> vetSol:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>for</b> i <b>in</b> setNI:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instance = inst+<font color=#0057ae>str</font>(i)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;os.system(<font color=#bf0303>'./lslahc /home/davi/git/gpsp/in/ '</font>+ instance +<font color=#bf0303>'.txt /home/davi/git/gpsp/sol/'</font>+instance+<font color=#bf0303>'_lahc_1000_'</font>+<font color=#0057ae>str</font>(h)+<font color=#bf0303>'.sol 300 /home/davi/git/gpsp/sol/initSol/'</font>+ instance +<font color=#bf0303>'_init_'</font>+ <font color=#0057ae>str</font>(h)+<font color=#bf0303>'.sol -lfa 1000 -learning 1 '</font>)<br/>
+
+<br/>
+</div>
+			    
+			</td>
+		    </tr>
+
+	    </table>
+	    
+	    </div>
+         </div>
+      </li>
+      
+      <br/> 
+		
+      <hr align="center" width="1100px" size="1" color="#cecece">
+    
+      
+      <li class="form-line" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+   
+              <p align="justify">[Pt-Br] <b>Descrição:</b> O ranking em seguida é referente às melhores vizinhanças do proposto teste. Os parâmetros obtidos servem de apoio para avaliar as vizinhanças que tiveram melhor desempenho na execução. O ranking F(<i>factor</i>), foi obtido com a somatória de todos os fatores(<i>improvement / time</i>) das vizinhanças de cada instância. Da mesma forma, o ranking I(improvement), foi obtido com a somatória das melhorias das vizinhanças de cada instância. O campo (% factor) é a normalização do valor do fator. Para obtê-lo, divimos cada um dos fatores pelo maior fator. </p>
+               
+          </div>
+        </div>
+      </li>  
+
+      <li class="form-line" id="id_3">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+
+                <table id="rankingTable">
+	
+		    <tr><td bgcolor="#cecece" align="center" colspan="10" style="font-weight:bold">Rank reference: Test 005 (lslahc)</td><tr>
+	            <tr><td bgcolor="#cecece" align="center" colspan="4" style="font-weight:bold" width="300"><i>Ranking F[n] (Factor)</i></td>
+	            <td bgcolor="#FFFFFF" align="center" rowspan="16" width="30"></td>
+		    <td bgcolor="#cecece" align="center" colspan="4" style="font-weight:bold" width="300"><i>Ranking I[n] (Improvement)</i></td></tr>
+		    
+		    <tr><td bgcolor="#cecece" align="center" style="font-weight:bold">Rank <i>#</i></td><td bgcolor="#cecece" align="center" style="font-weight:bold" width="300">Neighborhood</td><td bgcolor="#cecece" align="center" style="font-weight:bold"><i>% factor</i></td><td bgcolor="#cecece" align="center" style="font-weight:bold">About</td>
+		    <td bgcolor="#cecece" align="center" style="font-weight:bold">Rank <i>#</i></td><td bgcolor="#cecece" align="center" style="font-weight:bold" width="300">Neighborhood</td><td bgcolor="#cecece" align="center" style="font-weight:bold"><i>% improv</i></td><td bgcolor="#cecece" align="center" style="font-weight:bold">About</td></tr>
+		    
+<!-- INICIO Table Gerado Automaticamente -->
+
+
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">1</td><td bgcolor="#FFFFFF" align="center" width="300"> Change One Mode </td><td bgcolor="#FFFFFF" align="center">1.0000</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(7,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">1</td><td bgcolor="#FFFFFF" align="center" width="300"> Swap and Compact Two Projects </td><td bgcolor="#FFFFFF" align="center">1.0000</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(5,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">2</td><td bgcolor="#FCECEC" align="center" width="300"> Change Two Modes </td><td bgcolor="#FCECEC" align="center">0.6229</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(8,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">2</td><td bgcolor="#FCECEC" align="center" width="300"> Successive Swap for a Job in a Window </td><td bgcolor="#FCECEC" align="center">0.6336</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(11,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">3</td><td bgcolor="#FFFFFF" align="center" width="300"> Change Three Modes </td><td bgcolor="#FFFFFF" align="center">0.4179</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(9,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">3</td><td bgcolor="#FFFFFF" align="center" width="300"> Compact Project on Percentage </td><td bgcolor="#FFFFFF" align="center">0.5145</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(6,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">4</td><td bgcolor="#FCECEC" align="center" width="300"> Swap and Compact Two Projects </td><td bgcolor="#FCECEC" align="center">0.3770</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(5,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">4</td><td bgcolor="#FCECEC" align="center" width="300"> Change One Mode </td><td bgcolor="#FCECEC" align="center">0.4494</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(7,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">5</td><td bgcolor="#FFFFFF" align="center" width="300"> Change Four Modes </td><td bgcolor="#FFFFFF" align="center">0.3176</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(10,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">5</td><td bgcolor="#FFFFFF" align="center" width="300"> Change Two Modes </td><td bgcolor="#FFFFFF" align="center">0.4048</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(8,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">6</td><td bgcolor="#FCECEC" align="center" width="300"> Offset Project </td><td bgcolor="#FCECEC" align="center">0.2156</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(4,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">6</td><td bgcolor="#FCECEC" align="center" width="300"> Change Three Modes </td><td bgcolor="#FCECEC" align="center">0.3454</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(9,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">7</td><td bgcolor="#FFFFFF" align="center" width="300"> Compact Project on Extreme </td><td bgcolor="#FFFFFF" align="center">0.1926</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(13,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">7</td><td bgcolor="#FFFFFF" align="center" width="300"> Change Four Modes </td><td bgcolor="#FFFFFF" align="center">0.3244</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(10,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">8</td><td bgcolor="#FCECEC" align="center" width="300"> Invert Sequence of Jobs </td><td bgcolor="#FCECEC" align="center">0.0197</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(1,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">8</td><td bgcolor="#FCECEC" align="center" width="300"> Invert Sequence of Jobs </td><td bgcolor="#FCECEC" align="center">0.2830</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(1,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">9</td><td bgcolor="#FFFFFF" align="center" width="300"> Swaps Two Jobs </td><td bgcolor="#FFFFFF" align="center">0.0130</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(3,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">9</td><td bgcolor="#FFFFFF" align="center" width="300"> Compact Project on Extreme </td><td bgcolor="#FFFFFF" align="center">0.2688</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(13,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">10</td><td bgcolor="#FCECEC" align="center" width="300"> Offset Job </td><td bgcolor="#FCECEC" align="center">0.0077</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(2,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">10</td><td bgcolor="#FCECEC" align="center" width="300"> Offset Project </td><td bgcolor="#FCECEC" align="center">0.2072</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(4,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">11</td><td bgcolor="#FFFFFF" align="center" width="300"> Compact Project on Percentage </td><td bgcolor="#FFFFFF" align="center">0.0031</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(6,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">11</td><td bgcolor="#FFFFFF" align="center" width="300"> Swaps Two Jobs </td><td bgcolor="#FFFFFF" align="center">0.1881</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(3,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">12</td><td bgcolor="#FCECEC" align="center" width="300"> Successive Swap for a Job in a Window </td><td bgcolor="#FCECEC" align="center">0.0026</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(11,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">12</td><td bgcolor="#FCECEC" align="center" width="300"> Successive Insertions of a Job in a Window </td><td bgcolor="#FCECEC" align="center">0.1805</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(12,2)"></td></tr>
+
+<tr><td bgcolor="#FFFFFF" align="center" style="font-weight:bold">13</td><td bgcolor="#FFFFFF" align="center" width="300"> Successive Insertions of a Job in a Window </td><td bgcolor="#FFFFFF" align="center">0.0008</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(12,2)"></td>
+<td bgcolor="#FFFFFF" align="center" style="font-weight:bold">13</td><td bgcolor="#FFFFFF" align="center" width="300"> Offset Job </td><td bgcolor="#FFFFFF" align="center">0.1133</td>
+<td bgcolor="#FFFFFF" align="center"><input type="button" value="about" onClick="accessLink(2,2)"></td></tr>
+
+<tr><td bgcolor="#FCECEC" align="center" style="font-weight:bold">14</td><td bgcolor="#FCECEC" align="center" width="300"> Compact Subsequent Projects </td><td bgcolor="#FCECEC" align="center">0.0000</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(14,2)"></td>
+<td bgcolor="#FCECEC" align="center" style="font-weight:bold">14</td><td bgcolor="#FCECEC" align="center" width="300"> Compact Subsequent Projects </td><td bgcolor="#FCECEC" align="center">0.0000</td>
+<td bgcolor="#FCECEC" align="center"><input type="button" value="about" onClick="accessLink(14,2)"></td></tr>
+
+
+
+<!-- FIM Table Gerado Automaticamente -->
+
+	    </table>
+          </div>
+        </div>
+      </li>  
+      
+      <br/><br/>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../index_lslahc.html">Back</a> - <a href="../../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+  
+      <script type="text/javascript" src="../../_js/links.js"></script>
+  
+    </font>
+  </body>
+</html>

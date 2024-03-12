@@ -1,0 +1,365 @@
+# depslib dependency file v1.0
+1507209787 source:/home/davi/git/gpsp/resultsAnalyzer/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"index.h"
+	"dados.h"
+	"results.h"
+	"analysis.h"
+	"parameters.h"
+	"best_solutions.h"
+	"results_details.h"
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+
+1507210439 source:/home/davi/git/gpsp/resultsAnalyzer/dados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dados.h"
+	"best_solutions.h"
+	"util.h"
+	"index.h"
+
+1506919809 /home/davi/git/gpsp/resultsAnalyzer/dados.h
+
+1507209751 source:/home/davi/git/gpsp/resultsAnalyzer/results.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"results.h"
+	"results_details.h"
+	"best_solutions.h"
+	"util.h"
+	"dados.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/results.h
+	"dados.h"
+
+1507146445 source:/home/davi/git/gpsp/resultsAnalyzer/parameters.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"parameters.h"
+	"util.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/parameters.h
+	"dados.h"
+
+1507146257 source:/home/davi/git/gpsp/resultsAnalyzer/analysis.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"analysis.h"
+	"quality_by_instance.h"
+	"util.h"
+	"dados.h"
+
+1484926076 /home/davi/git/gpsp/resultsAnalyzer/analysis.h
+	"dados.h"
+
+1507146675 source:/home/davi/git/gpsp/resultsAnalyzer/quality_by_instance.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+	"util.h"
+	"dados.h"
+
+1506200452 /home/davi/git/gpsp/resultsAnalyzer/quality_by_instance.h
+	"dados.h"
+
+1506200795 /home/davi/git/gpsp/resultsAnalyzer/quality_by_instance_all.h
+	"dados.h"
+
+1507144698 source:/home/davi/git/gpsp/resultsAnalyzer/quality_by_instance_all.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"quality_by_instance_all.h"
+	"util.h"
+	"dados.h"
+
+1507153425 source:/home/davi/git/gpsp/resultsAnalyzer/index.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"index.h"
+	"util.h"
+	"dados.h"
+
+1507068621 /home/davi/git/gpsp/resultsAnalyzer/index.h
+	"dados.h"
+
+1507146591 source:/home/davi/git/gpsp/resultsAnalyzer/results_details.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"results_details.h"
+	"util.h"
+
+1485300456 /home/davi/git/gpsp/resultsAnalyzer/results_details.h
+	"dados.h"
+
+1506794408 /home/davi/git/gpsp/resultsAnalyzer/best_solutions.h
+	"dados.h"
+
+1507146276 source:/home/davi/git/gpsp/resultsAnalyzer/best_solutions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"best_solutions.h"
+	"util.h"
+
+1507083011 /home/davi/git/gpsp/resultsAnalyzer/util.h
+
+1507165533 source:/home/davi/git/gpsp/resultsAnalyzer/util.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"util.h"
+
+1506439072 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/analysis.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"analysis.h"
+	"quality_by_instance.h"
+	"util.h"
+
+1484926076 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/analysis.h
+	"dados.h"
+
+1506717163 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/dados.h
+
+1506200452 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/quality_by_instance.h
+	"dados.h"
+
+1506438939 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/util.h
+
+1506717523 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/best_solutions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"best_solutions.h"
+	"util.h"
+
+1506314140 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/best_solutions.h
+	"dados.h"
+
+1506717162 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/dados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dados.h"
+	"best_solutions.h"
+
+1506717721 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/index.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"index.h"
+	"util.h"
+
+1485225915 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/index.h
+	"dados.h"
+
+1506464415 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"index.h"
+	"dados.h"
+	"results.h"
+	"analysis.h"
+	"parameters.h"
+	"best_solutions.h"
+	"results_details.h"
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/results.h
+	"dados.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/parameters.h
+	"dados.h"
+
+1485300456 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/results_details.h
+	"dados.h"
+
+1506200795 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/quality_by_instance_all.h
+	"dados.h"
+
+1506439110 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/parameters.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"parameters.h"
+	"util.h"
+
+1506464062 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/quality_by_instance.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+	"util.h"
+
+1506439132 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/quality_by_instance_all.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"quality_by_instance_all.h"
+	"util.h"
+
+1506717234 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/results.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"results.h"
+	"results_details.h"
+	"best_solutions.h"
+	"util.h"
+
+1506439227 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/results_details.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"results_details.h"
+	"util.h"
+
+1506462431 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b/util.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"util.h"
+
+1506439072 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/analysis.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"analysis.h"
+	"quality_by_instance.h"
+	"util.h"
+
+1484926076 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/analysis.h
+	"dados.h"
+
+1506801194 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/dados.h
+
+1506200452 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/quality_by_instance.h
+	"dados.h"
+
+1506438939 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/util.h
+
+1506827591 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/best_solutions.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"best_solutions.h"
+	"util.h"
+
+1506794408 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/best_solutions.h
+	"dados.h"
+
+1506827215 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/dados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dados.h"
+	"best_solutions.h"
+
+1506717721 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/index.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"index.h"
+	"util.h"
+
+1485225915 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/index.h
+	"dados.h"
+
+1506791919 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<time.h>
+	"index.h"
+	"dados.h"
+	"results.h"
+	"analysis.h"
+	"parameters.h"
+	"best_solutions.h"
+	"results_details.h"
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/results.h
+	"dados.h"
+
+1484926077 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/parameters.h
+	"dados.h"
+
+1485300456 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/results_details.h
+	"dados.h"
+
+1506200795 /home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/quality_by_instance_all.h
+	"dados.h"
+
+1506439110 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/parameters.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"parameters.h"
+	"util.h"
+
+1506791919 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/quality_by_instance.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"quality_by_instance.h"
+	"quality_by_instance_all.h"
+	"util.h"
+
+1506439132 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/quality_by_instance_all.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"quality_by_instance_all.h"
+	"util.h"
+
+1506439227 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/results_details.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"results_details.h"
+	"util.h"
+
+1506462431 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/util.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"util.h"
+
+1506828192 source:/home/davi/git/gpsp/resultsAnalyzer/resultsAnalyzer_27-09-17b_FUNCIONANDO/results.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<math.h>
+	"results.h"
+	"results_details.h"
+	"best_solutions.h"
+	"util.h"
+

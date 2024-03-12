@@ -1,0 +1,206 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="HandheldFriendly" content="true" />
+
+<!-- [~r00] --> 
+
+<!-- [*r00] -->
+        
+        <script src="../../_js/jquery.min.js"></script>
+        
+        <script type="text/javascript">
+            $(function() {
+            $(window).scroll(function()
+            {
+            var inicio_cabecalho = $('#inicio_cabecalho').height()+370; // altura do inicio_cabecalho
+            var rodape = $('#rodape').height(); // altura do rodape
+            var scrollTop = $(window).scrollTop(); // qto foi rolado a barra
+            var tamPagina = $(document).height(); // altura da pagina
+            
+            if(scrollTop > inicio_cabecalho){
+            $('#cabecalho').css({'position' : 'absolute', 'margin-top' : scrollTop - (inicio_cabecalho-5)});
+            }else{
+            $('#cabecalho').css({'position' : 'relative', 'margin-top' : 0});
+            }               
+            });
+            });
+        </script>
+        
+        <link type="text/css" rel="stylesheet" href="../../_css/header.css"  media="all" />
+        <link type="text/css" rel="stylesheet" href="../../_css/tables.css"/>
+        <link type="text/css" rel="stylesheet" href="../../_css/formCss.css"/>
+        <link type="text/css" rel="stylesheet" href="../../_css/nova.css"/>
+        <link type="text/css" rel="stylesheet" href="../../_css/printForm.css" media="print"/>
+        
+        <style type="text/css">
+            
+            .form-label{
+                width:150px !important;
+            }
+                
+            .form-label-left{
+                width:150px !important;
+            }
+                
+            .form-line{
+                padding-top:12px;
+                padding-bottom:12px;
+            }
+                
+            .form-label-right{
+                width:150px !important;
+            }
+                
+            body, html{
+                margin:0;
+                padding:0;
+                background:#FFFFFF;
+            }
+
+            .form-all{
+                margin:0px auto;
+                padding-top:0px;
+                width:1280px;
+                background:#FFFFFF;
+                color:#555 !important;
+                font-family:'Lucida Grande';
+                font-size:14px;
+            }
+                
+            .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+                color:#555;
+            }
+
+        </style>
+    
+    </head>
+    
+    <body>
+
+    <div class="form-all">
+        <font face="Arial" >
+                    
+            <li id="cid_1" class="form-input-wide">
+                <div class="form-header-group">
+                    <h2 id="header_1" class="form-header">
+
+<!-- [~r01] --> 
+
+<!-- [*r01] -->
+
+                    </h2>
+                    <div id="subHeader_1" class="form-subHeader">
+
+<!-- [~r02] --> 
+
+<!-- [*r02] -->
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="form-line" id="id_1">
+                <div id="cid_2" class="form-input-wide">
+                    <div style="text-align: left;" class="form-buttons-wrapper">
+
+<!-- [~r03] --> 
+
+<!-- [*r03] -->
+                            
+                    </div>
+                </div>
+            </li>
+
+            <li class="form-line" id="id_7">
+                <div id="cid_7" class="form-input-wide">
+                    <div id="text_7" class="form-html"><p>
+
+<!-- [~r04] --> 
+
+<!-- [*r04] -->
+
+                    </div>
+                </div>
+            </li>
+
+            <div id="inicio_cabecalho" class="center"></div>
+                                   
+                <div id="conteudo" class="center">
+                    <div id="cabecalho">                                    
+                             
+                        <li class="form-line" id="id_4">
+                            <div style="text-align: right;" class="form-buttons-wrapper">
+<!-- [~r05] -->
+
+<!-- [*r05] -->
+                            </div>
+                        </li>
+
+                        <div style="text-align: right;" class="form-buttons-wrapper">
+                            <table id="anyTable" style=font-size:8.5pt>                           
+
+                                <th bgcolor="#CDC5BF" align="center" width="94px" height="35px"> instance </th>
+                                <th bgcolor="#CDC5BF" align="center" width="78px"> best </br> solution </th>
+                                <th bgcolor="#CDC5BF" align="center" width="75px"> run time </br> best sol. </th>
+                                <th bgcolor="#CDC5BF" align="center" width="78px"> best </br> dual bound </th>
+                                <th bgcolor="#CDC5BF" align="center" width="78px"> rounded </br> best dual </br> bound </th>
+                                <th bgcolor="#CDC5BF" align="center" width="75px"> run time </br> best dual </br> bound </th>
+                                <th bgcolor="#CDC5BF" align="center" width="78px"> literature </br> solution </th>
+                                <th bgcolor="#CDC5BF" align="center" width="75px"> run time </br> literat. sol. </th>
+                                <th bgcolor="#CDC5BF" align="center" width="43px"> UB </br> TPD </th>
+                                <th bgcolor="#CDC5BF" align="center" width="43px"> UB </br> TMS</th>
+                                <th bgcolor="#CDC5BF" align="center" width="43px"> LB </br> TMS</th>
+                                <th bgcolor="#CDC5BF" align="center" width="36px"> opt? </th>
+                                <th bgcolor="#CDC5BF" align="center" width="54px"> B/C </br> sol. </th>
+                                <th bgcolor="#CDC5BF" align="center" width="54px"> dual bound / </br> UB TPD </th>
+                                <th bgcolor="#CDC5BF" align="center" width="54px"> rounded dual </br> bound / </br> UB TPD</th>
+                                <th bgcolor="#CDC5BF" align="center" width="62px"> ref. test <br/> best sol.</th>
+                                <th bgcolor="#CDC5BF" align="center" width="62px"> ref. test <br/> best dual bound</th>
+                                <th bgcolor="#CDC5BF" align="center" width="38px"> file </br>*.sol </th>
+
+                            </table>     
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </br>
+
+            <div id="dados">
+
+                <table id="anyTable" style=font-size:9.5pt> 
+
+<!-- [~r06] -->
+
+<!-- [*r06] -->
+
+                </table>   
+            </div>
+
+            </br>
+            
+            <div class="form-all">
+                <li class="form-line" id="id_1">
+                    <div style="text-align: left;" class="form-buttons-wrapper">
+
+<!-- [~r07] -->
+
+<!-- [*r07] -->
+
+                    </div>
+                </li>
+            </div>
+
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            
+        </font>
+
+    </body>
+</html> 
+
+<!-- [~end] --> 

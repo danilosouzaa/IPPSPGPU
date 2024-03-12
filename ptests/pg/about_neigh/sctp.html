@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+  <head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <title>Swap and Compact Two Projects (SCTP)</title>
+
+    <link type="text/css" rel="stylesheet" href="../_css/tables.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/formCss.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/nova.css"/>
+    <link type="text/css" rel="stylesheet" href="../_css/printForm.css" media="print"/>
+    
+    <style type="text/css">
+      .form-label{
+	  width:150px !important;
+      }
+      .form-label-left{
+	  width:150px !important;
+      }
+      .form-line{
+	  padding-top:12px;
+	  padding-bottom:12px;
+      }
+      .form-label-right{
+	  width:150px !important;
+      }
+      body, html{
+	  margin:0;
+	  padding:0;
+	  background:#FFFFFF;
+      }
+
+      .form-all{
+	  margin:0px auto;
+	  padding-top:0px;
+	  width:800px;
+	  background:#FFFFFF;
+	  color:#555 !important;
+	  font-family:'Lucida Grande';
+	  font-size:14px;
+      }
+      .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+	  color:#555;
+      }
+      
+      img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+      }
+
+    </style>
+
+  </head>
+  
+  <body>
+  
+  <font face="Arial" >
+
+  <div class="form-all">
+    <ul class="form-section">
+      <li id="cid_1" class="form-input-wide">
+        <div class="form-header-group">
+          <h2 id="header_1" class="form-header">
+            Swap and Compact Two Projects (SCTP)
+          </h2>
+          <div id="subHeader_1" class="form-subHeader">
+	    Neighborhood
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1">
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+            <a href="../about_neigh.html">Back</a> - <a href="../../index.html">Home</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="form-line" id="id_1" >
+        <div id="cid_2" class="form-input-wide">
+          <div style="text-align: left;" class="form-buttons-wrapper">
+           <font face="Arial" >
+           
+          <p align="justify" style="font-size: 17px" >
+          The neighborhood purpose is to relocate a sequence based on jobs belonging to two projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i>, furthermore jobs of <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> will be compacted, the swap occurs, when the project that finishes last is allocated first. To perform this process, it is necessary to receive as a parameter the allocations sequence <i>S</i> and the projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> .
+          <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At first step, all positions in <i>S</i> are accessed in reverse order to identify between <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> which finishing last and what are the early indexes allocations of each project. During this process, jobs of each projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> are stored, respectively, in vectors <i>M1</i> and <i>M2</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The second step, comprises the swap of sequence, for this it is needed to set a benchmark <i>idxCtrl</i> in <i>S</i>, representing the first job index between the projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i>. So, all jobs not belonging to projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> and with smaller indexes than <i>idxCrtl</i> are stored in vector <i>L</i> and those with bigger indexes than <i>idxCrtl</i> are stored in vector <i>R</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After completing the second step, it is necessary unite all jobs contained in <i>M1</i>, <i>M2</i>, <i>L</i> and <i>R</i>. Initially the sequence is rebuilt including in the first place all jobs of <i>L</i>, representing jobs allocated before <i>idxCrtl</i> and not belonging to projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i>. Soon after, are added in <i>S</i> project jobs that finishing by last (<i>M<SUB>1</SUB></i> or <i>M<SUB>2</SUB></i>), then jobs project that finishing first (<i>M<SUB>1</SUB></i> or <i>M<SUB>2</SUB></i>). Finally, all jobs of <i>R</i> are added, representing jobs not belonging to projects <i>p<SUB>1</SUB></i> and <i>p<SUB>2</SUB></i> allocated after <i> idxCrtl</i>.
+	  <br/>
+	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure 2 shows the movement made by this neighborhood. In this example, the method receives as parameter two projects (2, 3), all jobs of those projects are compacted and its positions are swapped. All jobs pertaining to project <i>p<SUB>2</SUB></i> are colored in gray intensity 3 and jobs pertaining to project <i>p<SUB>3</SUB></i> are colored in gray intensity 2.
+
+	  <br/>
+	  
+	  <br/><br/><br/>
+	  
+	  <img style="image-align: center;" id="icone" src="images/sctp_f02.png"/>
+	  
+	  </font>
+          </div>
+        </div>
+      </li>
+      
+  
+    </ul>
+  </div>
+  </font>
+  </body>
+</html>

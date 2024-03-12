@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="HandheldFriendly" content="true" />
+        
+        <title>Tests and results </title>
+
+        <link type="text/css" rel="stylesheet" href="pg/_css/main.css"/>
+        <link type="text/css" rel="stylesheet" href="pg/_css/tables.css"/>
+        <link type="text/css" rel="stylesheet" href="pg/_css/formMain.css"/>
+        <link type="text/css" rel="stylesheet" href="pg/_css/formCss.css"/>
+        <link type="text/css" rel="stylesheet" href="pg/_css/nova.css"/>
+        <link type="text/css" rel="stylesheet" href="pg/_css/printForm.css" media="print"/>
+
+        <style type="text/css">
+
+            .form-label{
+                width:150px !important;
+            }
+            
+            .form-label-left{
+                width:150px !important;
+            }
+        
+            .form-line{
+                padding-top:12px;
+                padding-bottom:12px;
+            }
+        
+            .form-label-right{
+                width:150px !important;
+            }
+        
+            body, html{
+                margin:0;
+                padding:0;
+                background:#FFFFFF;
+                list-style-type:none;
+            }
+
+            .form-all{
+                margin:0px auto;
+                padding-top:0px;
+                width:690px;
+                background:#FFFFFF;
+                color:#555 !important;
+                font-family:'Lucida Grande'; 
+                font-size:14px;
+            }
+        
+            .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+                color:#555;
+            }
+        
+            div#interface{
+                width: 700px;
+                /* background-color: #ffffff*/
+                margin: -20px auto 0px auto;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                padding: 10px; /* Espaço interno da celula*/ /* OU padding: 10px 10px 10px 10px; */
+                color: #363636;
+            }
+
+            INPUT.inputB {  
+                width: 100px;  
+                height: 40px;    
+            }  
+        
+            a:link, a:visited {
+                text-decoration: none
+            }
+            
+            a:hover {
+                text-decoration: underline; 
+                color: #f00
+            }
+            
+            a:active {
+                text-decoration: none
+            }
+        
+        </style>
+    
+    </head>
+  
+    <body>
+
+    <div id="interface">
+        <font face="Arial" >
+      
+            <li class="form-input-wide" id="id_0" >
+                <div class="form-header-group">
+                    <h2 id="header_1" class="form-header">
+                        TESTS AND RESULTS
+                    </h2>
+                    <div id="subHeader_1" class="form-subHeader">
+                        Tests carried out in the RCPSP, MRCPSP and MMRCMPSP
+                    </div>
+                </div>
+            </li>
+      
+            <li class="form-line" id="id_2">
+                <div id="text_7" class="form-html">
+                    <em> Recent Experiments </em>
+                </div>
+            </li>
+      
+            <li class="form-line" id="id_4">
+                <div id="cid_2" class="form-input-wide">
+                    <div style="text-align: right;" class="form-buttons-wrapper">
+                        <a href="pg/about_neigh.html">About Neighborhoods</a></br></br>
+                        <a href="pg/best_parameters.html">Best Parameters</a></br></br>
+                        <a href="pg/best_sol.html">Best Solutions</a></br></br>
+                        <a href="pg/char_inst.html">Characteristics of Instances</a></br></br>
+                        <a href="pg/papers.html">Papers</a></br></br>
+                        <a href="pg/init_sol.html">Initial Solutions</a></br></br>
+                    </div>
+                </div>
+            </li>
+      
+            <li class="form-line" id="id_5">
+            
+                <label class="form-label-left" id="label_8" for="input_8">
+                    Tests:<span class="form-required">*</span>
+                </label>
+                
+                <div id="id_6" class="form-input">
+                    <select id="id_cl" name="combolist" style="width:150px" >
+                        <option value="0"> </option>
+                        <option value="5"> cutting planes </option>
+                        <option value="1"> lslahc </option>
+                        <option value="2"> lsdvnd </option>
+                        <option value="3"> lsvns </option>
+                        <option value="4"> lssa </option>
+                        <option value="7"> neighborhoods (analysis) </option>
+                    </select>
+                </div>
+            </li>
+
+            <li class="form-line" id="id_8">
+                <div id="cid_2" class="form-input-wide">
+                    <div style="margin-left:156px" class="form-buttons-wrapper">
+                        <input type="button" value="Access" class="inputB" onClick="accessLink(getElementById('id_cl').value)"> 
+                    </div>
+                </div>
+            </li> 
+
+            <li class="form-line" id="id_9">
+                <div id="cid_6" class="form-input-wide">
+                    <div id="text_6" class="form-html">
+                        <p style="text-align: right;">
+                            <b>Authors:</b><br />Janniele A. Soares<br />Haroldo S. Gambini<br />Davi D. Baltar<br />Túlio A. M. Toffolo
+                        </p>
+                    </div>
+                </div>
+            </li>
+      
+            <li class="form-line" id="id_9">
+                <div id="cid_6" class="form-input-wide">
+                    <div id="text_6" class="form-html">
+                        <p style="text-align: right;">
+                            Universidade Federal de Ouro Preto - UFOP <br/><br/>2015-2017
+                        </p>
+                    </div>
+                </div>
+            </li>
+    
+    </div>
+
+    <script type="text/javascript">
+    
+        function accessLink(mValue)
+        {
+        
+            if( mValue==0 )
+                alert("Invalid option! ");
+
+            if( mValue==1 )
+                location.href="pg/lslahc/index_lslahc.html"
+
+            if( mValue==2 )
+                location.href="pg/lsdvnd/index_lsdvnd.html"
+                        
+            if( mValue==3 )
+                location.href="pg/lsvns/index_lsvns.html"
+
+            if( mValue==4 )
+                location.href="pg/lssa/index_lssa.html"
+
+            if( mValue==5 )
+                location.href="pg/cutting_planes/index_cutting_planes.html"
+                
+            if( mValue==6 )
+                location.href="pg/best_parameter.html"
+                
+            if( mValue==7 )
+                location.href="pg/index_improv_neigh.html"
+
+        }
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,80 @@
+    table#maintable {
+	border: 1px solid #606060;
+	font-size: 13px;
+	color: #363636;
+
+	/*border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;*/ 
+    }
+    
+    table#maintable td {
+	border: 1px solid #606060;
+    }
+    
+    table#maintable th {
+	border: 1px solid #606060;
+    }
+    
+    table#neighTable {
+	border: 1px solid #606060;
+	border-spacing: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #363636;
+    }   
+    
+    table#rankingTable {
+	border: 1px solid #606060;
+	font-size: 14px;
+	color: #363636;
+	margin-left: auto;
+	margin-right: auto;
+	/*border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;*/ 
+    }
+    
+    table#rankingTable td {
+	border: 1px solid #606060;
+    }
+    
+    table#anyTable {
+	border: 1px solid #606060;
+	font-size: 14px;
+	color: #363636;
+	margin-left: auto;
+	margin-right: auto;
+	/*border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;*/ 
+    }
+    
+    table#anyTable td {
+	border: 1px solid #606060;
+    }
+    
+    table#anyTable th {
+	border: 1px solid #606060;
+    }
+    
+    table#anyTableLeft {
+	border: 1px solid #606060;
+	font-size: 14px;
+	color: #363636;
+	/*
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0px;
+	margin-left: auto;
+	margin-right: auto;*/ 
+    }
+    
+    table#anyTableLeft td {
+	border: 1px solid #606060;
+    }
+    
+    table#anyTableLeft th {
+	border: 1px solid #606060;
+    }
+     
